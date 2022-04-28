@@ -1,10 +1,11 @@
-# Project Description
-NEAR Freelance is a blckchin platform where users can post paid tasks and get paid by executing tesks they applied to.
+# NEAR Freelance
+The project is a blockchain platform where users can post paid tasks and get paid by executing tasks they applied to.
 This is a training project for Dacade NEAR blockchain course.
-The contract is written in AssemblyScript. The frontend is written on React.
+The contract is written in AssemblyScript and deployed to the testnet. The frontend is written on React.
 
 ## Demo
-The working testnet demo is available here:
+
+You can find the working demo here:
 [https://vadkutsen.github.io/near-freelance](https://vadkutsen.github.io/near-freelance)
 
 ## Available Scripts
