@@ -17,3 +17,21 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+## Contract
+
+The contract contains of the next functions:
+
+### setProject
+accepts a project object as a parameter and saves the project on blockchain.
+
+### getProject
+accepts a project id as a parameter and returns the project object or null if the project is not found.
+### getProjects
+returns a list of existing projects.
+### applyForProject
+accepts a project id as a parameter and sets the sender id as the project assignee.
+### completeProject
+accepts a project id and a result string as a parameters and sets the project's completed field to true and saves the result.
+### payForProject
+accepts a project id and as a parameter and sets the project's paid field to true and transfers the price amount to assignee.
+
