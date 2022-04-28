@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Button, Modal, Form, FloatingLabel } from "react-bootstrap";
 
-const AddProduct = ({ save }) => {
+const AddProject = ({ save }) => {
   const [name, setName] = useState("");
-  const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
-  const [location, setLocation] = useState("");
   const [price, setPrice] = useState(0);
-  const isFormFilled = () => name && image && description && location && price;
+  const isFormFilled = () => name && description && price;
 
   const [show, setShow] = useState(false);
 
@@ -27,13 +25,13 @@ const AddProduct = ({ save }) => {
       </Button>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>New Product</Modal.Title>
+          <Modal.Title>New Project</Modal.Title>
         </Modal.Header>
         <Form>
           <Modal.Body>
             <FloatingLabel
               controlId="inputName"
-              label="Product name"
+              label="Project name"
               className="mb-3"
             >
               <Form.Control
@@ -41,20 +39,7 @@ const AddProduct = ({ save }) => {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                placeholder="Enter name of product"
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="inputUrl"
-              label="Image URL"
-              className="mb-3"
-            >
-              <Form.Control
-                type="text"
-                placeholder="Image URL"
-                onChange={(e) => {
-                  setImage(e.target.value);
-                }}
+                placeholder="Enter a name of the project"
               />
             </FloatingLabel>
             <FloatingLabel
@@ -68,19 +53,6 @@ const AddProduct = ({ save }) => {
                 style={{ height: "80px" }}
                 onChange={(e) => {
                   setDescription(e.target.value);
-                }}
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="inputLocation"
-              label="Location"
-              className="mb-3"
-            >
-              <Form.Control
-                type="text"
-                placeholder="Location"
-                onChange={(e) => {
-                  setLocation(e.target.value);
                 }}
               />
             </FloatingLabel>
@@ -109,15 +81,13 @@ const AddProduct = ({ save }) => {
             onClick={() => {
               save({
                 name,
-                image,
                 description,
-                location,
                 price,
               });
               handleClose();
             }}
           >
-            Save product
+            Save project
           </Button>
         </Modal.Footer>
       </Modal>
@@ -125,8 +95,8 @@ const AddProduct = ({ save }) => {
   );
 };
 
-AddProduct.propTypes = {
+AddProject.propTypes = {
   save: PropTypes.func.isRequired,
 };
 
-export default AddProduct;
+export default AddProject;

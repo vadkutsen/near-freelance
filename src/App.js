@@ -3,9 +3,9 @@ import { Container, Nav } from "react-bootstrap";
 import { login, logout as destroy, accountBalance } from "./utils/near";
 import Wallet from "./components/Wallet";
 import { Notification } from "./components/utils/Notifications";
-import Products from "./components/marketplace/Products";
+import Projects from "./components/platform/Projects";
 import Cover from "./components/utils/Cover";
-import coverImg from "./assets/img/sandwich.jpg";
+import coverImg from "./assets/img/jobsgraphic.png";
 import "./App.css";
 
 const App = function AppWrapper() {
@@ -15,7 +15,7 @@ const App = function AppWrapper() {
     if (account.accountId) {
       setBalance(await accountBalance());
     }
-  });
+  }, [account.accountId]);
 
   useEffect(() => {
     getBalance();
@@ -36,10 +36,10 @@ const App = function AppWrapper() {
               />
             </Nav.Item>
           </Nav>
-          <main><Products /></main>
+          <main><Projects /></main>
         </Container>
       ) : (
-        <Cover name="Street Food" login={login} coverImg={coverImg} />
+        <Cover name="NEAR Freelance" login={login} coverImg={coverImg} />
       )}
     </>
   );
