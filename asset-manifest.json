@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/near-freelance/static/css/main.d87cbb72.chunk.css",
+    "main.js": "/near-freelance/static/js/main.d01049bc.chunk.js",
+    "main.js.map": "/near-freelance/static/js/main.d01049bc.chunk.js.map",
+    "runtime-main.js": "/near-freelance/static/js/runtime-main.79d78cd7.js",
+    "runtime-main.js.map": "/near-freelance/static/js/runtime-main.79d78cd7.js.map",
+    "static/css/2.b70b6317.chunk.css": "/near-freelance/static/css/2.b70b6317.chunk.css",
+    "static/js/2.dce90e98.chunk.js": "/near-freelance/static/js/2.dce90e98.chunk.js",
+    "static/js/2.dce90e98.chunk.js.map": "/near-freelance/static/js/2.dce90e98.chunk.js.map",
+    "static/js/3.53116240.chunk.js": "/near-freelance/static/js/3.53116240.chunk.js",
+    "static/js/3.53116240.chunk.js.map": "/near-freelance/static/js/3.53116240.chunk.js.map",
+    "index.html": "/near-freelance/index.html",
+    "static/css/2.b70b6317.chunk.css.map": "/near-freelance/static/css/2.b70b6317.chunk.css.map",
+    "static/css/main.d87cbb72.chunk.css.map": "/near-freelance/static/css/main.d87cbb72.chunk.css.map",
+    "static/js/2.dce90e98.chunk.js.LICENSE.txt": "/near-freelance/static/js/2.dce90e98.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/near-freelance/static/media/bootstrap-icons.c1d7432e.woff",
+    "static/media/jobsgraphic.d0121ffe.png": "/near-freelance/static/media/jobsgraphic.d0121ffe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79d78cd7.js",
+    "static/css/2.b70b6317.chunk.css",
+    "static/js/2.dce90e98.chunk.js",
+    "static/css/main.d87cbb72.chunk.css",
+    "static/js/main.d01049bc.chunk.js"
+  ]
+}
